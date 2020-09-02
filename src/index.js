@@ -23,7 +23,7 @@ class Main extends React.Component {
 	}
 
 	handleScroll(e) {
-		if(window.pageYOffset > 90) {
+		if(window.pageYOffset > 60) {
 			if(!this.state.scrolling) {
 				this.setState({ scrolling: true });
 			}
@@ -36,6 +36,7 @@ class Main extends React.Component {
 		return (
 			<div>
 				<Navbar isScrolling={this.state.scrolling} />
+				<PageLanding />
 				<div className="test">haha</div>
 			</div>
 		);
