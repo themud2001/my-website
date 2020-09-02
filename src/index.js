@@ -21,8 +21,13 @@ class Main extends React.Component {
 	}
 
 	handleScroll(e) {
-		if(window.pageYOffset > 10 && !this.state.scrolling) {
-			this.setState({ scrolling: true });
+		if(window.pageYOffset > 10) {
+			if(!this.state.scrolling) {
+				this.setState({ scrolling: true });
+				console.log(window.pageYOffset);
+			}
+		} else {
+			this.setState({ scrolling: false });
 		}
 	}
 
