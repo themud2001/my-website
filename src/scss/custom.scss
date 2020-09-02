@@ -13,12 +13,10 @@ $black: #212121;
 $body-bg: $black;
 
 // Navbar
-$navbar-padding-y: 5vh;
-$navbar-padding-y-scrolling: 50px;
 $navbar-dark-color: $primary;
 
 $navbar-dark-brand-color: $primary;
-$navbar-brand-font-size: 2.5rem;
+$navbar-brand-font-size: 2.2rem;
 
 // Styling elements
 ::selection {
@@ -34,14 +32,22 @@ html, body {
 
 .navbar-custom {
 	border-bottom: 0px;
+	height: 150px;
+	transition: all 0.15s ease;
+}
+
+.navbar-custom .navbar-brand {
+	transition: all 0.15s ease;
 }
 
 .navbar-custom.scrolling {
 	border-bottom: 1px solid $primary;
-	height: $navbar-padding-y-scrolling;
+	height: 50px;
+	transition: all 0.15s ease;
 
-	.navbar-brand, .navbar-nav .nav-link .menu-toggler {
+	.navbar-brand {
 		font-size: 1.5rem;
+		transition: all 0.15s ease;
 	}
 }
 
