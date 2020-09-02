@@ -28,6 +28,10 @@ html, body {
 	border-bottom: 1px solid $primary;
 }
 
+.navbar-custom.scrolling {
+	height: 50px;
+}
+
 .navbar-custom .navbar-nav .menu-toggler:hover {
 	svg .menu-hamburger {
 		stroke: #FFF;
