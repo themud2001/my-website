@@ -6,10 +6,13 @@ import Col from "react-bootstrap/Col";
 
 function PageLanding() {
 	return (
-		<Container fluid className="page-landing text-center">
-			<Row className="page-landing-row">
-				<Col>
-					<h1>This is me</h1>
+		<Container fluid className="page-landing">
+			<Row className="page-landing-row justify-content-center">
+				<Col lg="8" sm="6" xs="12" md="8">
+					<Container fluid className="text-center">
+						<p className="name">Moath Zayadneh</p>
+						<p className="profession">Full-Stack Web Developer</p>
+					</Container>
 				</Col>
 			</Row>
 		</Container>
