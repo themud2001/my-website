@@ -21,7 +21,7 @@ class Main extends React.Component {
 	}
 
 	handleScroll(e) {
-		if(window.pageYOffset > 10) {
+		if(window.pageYOffset > 60) {
 			if(!this.state.scrolling) {
 				this.setState({ scrolling: true });
 				console.log(window.pageYOffset);

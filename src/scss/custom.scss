@@ -12,7 +12,8 @@ $black: #212121;
 $body-bg: $black;
 
 // Navbar
-$navbar-padding-y: 6vh;
+$navbar-padding-y: 5vh;
+$navbar-padding-y-scrolling: 50px;
 $navbar-dark-color: $primary;
 
 $navbar-dark-brand-color: $primary;
@@ -25,11 +26,12 @@ html, body {
 }
 
 .navbar-custom {
-	border-bottom: 1px solid $primary;
+	border-bottom: 0;
 }
 
 .navbar-custom.scrolling {
-	height: 50px;
+	height: $navbar-padding-y-scrolling;
+	border-bottom: 1px solid $primary;
 }
 
 .navbar-custom .navbar-nav .menu-toggler:hover {
