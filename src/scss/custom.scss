@@ -1,7 +1,7 @@
 // Font
 @font-face {
 	font-family: "Simplifica";
-	src: url("/fonts/SIMPLIFICA") format("truetype");
+	src: url("./fonts/SIMPLIFICA.ttf");
 }
 
 // Colors
@@ -13,7 +13,7 @@ $body-bg: $black;
 
 // Navbar
 $navbar-padding-y: 5vh;
-$navbar-padding-y-scrolling: 1vh;
+$navbar-padding-y-scrolling: 50px;
 $navbar-dark-color: $primary;
 
 $navbar-dark-brand-color: $primary;
@@ -23,17 +23,19 @@ $navbar-brand-font-size: 2.5rem;
 html, body {
 	font-family: "Simplifica";
 	font-weight: lighter !important;
+	height: 100%;
+	width: 100%;
 }
 
 .navbar-custom {
-	border-bottom: 0;
+	border-bottom: 0px;
 }
 
 .navbar-custom.scrolling {
-	height: $navbar-padding-y-scrolling;
 	border-bottom: 1px solid $primary;
+	height: $navbar-padding-y-scrolling;
 
-	.navbar-brand {
+	.navbar-brand, .navbar-nav .nav-link .menu-toggler {
 		font-size: 1.5rem;
 	}
 }
@@ -42,6 +44,21 @@ html, body {
 	svg .menu-hamburger {
 		stroke: #FFF;
 	}
+}
+
+.page-landing {
+	height: 100vh;
+	background-image: url("./images/roses_background.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-top: 1px solid transparent;
+}
+
+.page-landing .page-landing-row {
+	color: red;
+	border-top: 1px solid transparent;
+	margin-top: calc(50vh - 1.5rem);
 }
 
 .test {
