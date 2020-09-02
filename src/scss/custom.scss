@@ -13,11 +13,11 @@ $body-bg: $black;
 
 // Navbar
 $navbar-padding-y: 5vh;
-$navbar-padding-y-scrolling: 50px;
+$navbar-padding-y-scrolling: 1vh;
 $navbar-dark-color: $primary;
 
 $navbar-dark-brand-color: $primary;
-$navbar-brand-font-size: 1.8rem;
+$navbar-brand-font-size: 2.5rem;
 
 // Styling elements
 html, body {
@@ -32,6 +32,10 @@ html, body {
 .navbar-custom.scrolling {
 	height: $navbar-padding-y-scrolling;
 	border-bottom: 1px solid $primary;
+
+	.navbar-brand {
+		font-size: 1.5rem;
+	}
 }
 
 .navbar-custom .navbar-nav .menu-toggler:hover {
