@@ -2,6 +2,8 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 
 import Navbar from "./components/NavbarCustom";
+import PageLanding from "./components/PageLanding";
+
 import './scss/custom.scss';
 
 class Main extends React.Component {
@@ -24,7 +26,6 @@ class Main extends React.Component {
 		if(window.pageYOffset > 90) {
 			if(!this.state.scrolling) {
 				this.setState({ scrolling: true });
-				console.log(window.pageYOffset);
 			}
 		} else {
 			this.setState({ scrolling: false });
