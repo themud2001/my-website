@@ -1,0 +1,41 @@
+// Font
+@font-face {
+	font-family: "Simplifica";
+	src: url("/fonts/SIMPLIFICA") format("truetype");
+}
+
+// Colors
+$primary: #E91E63;
+$black: #212121;
+
+// Background
+$body-bg: $black;
+
+// Navbar
+$navbar-padding-y: 6vh;
+$navbar-dark-color: $primary;
+
+$navbar-dark-brand-color: $primary;
+$navbar-brand-font-size: 1.8rem;
+
+// Styling elements
+html, body {
+	font-family: "Simplifica";
+	font-weight: lighter !important;
+}
+
+.navbar-custom {
+	border-bottom: 1px solid $primary;
+}
+
+.navbar-custom .navbar-nav .menu-toggler:hover {
+	svg .menu-hamburger {
+		stroke: #FFF;
+	}
+}
+
+.test {
+	height: 1500px;
+}
+
+@import "~bootstrap/scss/bootstrap";
