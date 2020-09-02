@@ -5,7 +5,7 @@ import Nav from "react-bootstrap/Nav";
 
 function NavbarCustom({ isScrolling }) {
 	return (
-		<Navbar className={"navbar-custom justify-content-between" + (isScrolling ? " scrolling" : "")} variant="dark">
+		<Navbar fixed={isScrolling ? "top" : ""} className={"navbar-custom justify-content-between" + (isScrolling ? " scrolling" : "")} variant="dark">
 			<Navbar.Brand href="#">THEMUD</Navbar.Brand>
 			<Nav>
 				<Nav.Link>
