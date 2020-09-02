@@ -29,7 +29,7 @@ class Main extends React.Component {
 	render() {
 		return (
 			<div>
-				<Navbar />
+				<Navbar isScrolling={this.state.scrolling} />
 				<div className="test">haha</div>
 			</div>
 		);
