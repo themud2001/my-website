@@ -12,7 +12,7 @@ class HamburgerMenu extends React.Component {
 
 	scrollToAbout(e) {
 		this.props.onMenuClose(e);
-		document.querySelector(".about-container").scrollIntoView({ behavior: "smooth", block: "nearest" });
+		document.querySelector(".about-container").scrollIntoView({ behavior: "smooth", block: "start" });
 	}
 
 	scrollToContact(e) {
