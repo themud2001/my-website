@@ -26,6 +26,11 @@ $navbar-brand-font-size: 2.2rem;
 html, body {
 	font-family: "Simplifica";
 	font-weight: lighter !important;
+	background-image: url("./images/roses_background.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 	height: 100%;
 	width: 100%;
 }
@@ -107,11 +112,6 @@ html, body {
 
 .page-landing {
 	height: 100vh;
-	background-image: url("./images/roses_background.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
 	border-top: 1px solid transparent;
 }
 
@@ -143,7 +143,8 @@ html, body {
 
 .about-container {
 	background-color: $black;
-	margin-top: 100px;
+	padding-top: 50px;
+	padding-bottom: 60px;
 }
 
 .about-container .row .about-label {
@@ -153,6 +154,32 @@ html, body {
 
 .about-container .row .about-content {
 	color: #DDD;
+}
+
+.about-container .row .about-content span {
+	color: $primary;
+}
+
+.about-contact-space {
+	width: 100%;
+	height: 100px;
+	background-color: transparent;
+}
+
+.contact-container {
+	background-color: $black;
+	padding-top: 50px;
+	padding-bottom: 60px;
+}
+
+.contact-container .row .contact-label {
+	font-family: "Simplifica";
+	color: $dark-primary;
+}
+
+.contact-container .row .contact-email, .contact-container .row .contact-discord {
+	color: #FFF;
+	font-family: "Simplifica";
 }
 
 @import "~bootstrap/scss/bootstrap";

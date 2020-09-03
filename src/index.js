@@ -5,8 +5,13 @@ import Navbar from "./components/NavbarCustom";
 import HamburgerMenu from "./components/HamburgerMenu";
 import PageLanding from "./components/PageLanding";
 import About from "./components/About";
+import Contact from "./components/Contact";
 
 import './scss/custom.scss';
+
+function AboutContactSpace() {
+	return <div className="about-contact-space"></div>;
+}
 
 class Main extends React.Component {
 	constructor() {
@@ -63,6 +68,8 @@ class Main extends React.Component {
 				<HamburgerMenu isOpened={this.state.hamburgerOpen} onMenuClose={this.handleMenuClose} />
 				<PageLanding />
 				<About />
+				<AboutContactSpace />
+				<Contact />
 			</div>
 		);
 	}
