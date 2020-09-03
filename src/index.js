@@ -18,6 +18,7 @@ class Main extends React.Component {
 
 		this.handleScroll = this.handleScroll.bind(this);
 		this.handleHamburgerClick = this.handleHamburgerClick.bind(this);
+		this.handleMenuClose = this.handleMenuClose.bind(this);
 	}
 
 	componentDidMount() {
@@ -26,14 +27,6 @@ class Main extends React.Component {
 
 	componentWillUnmount() {
 		window.removeEventListener("scroll", this.handleScroll);
-	}
-
-	handleHamburgerClick(e) {
-		e.preventDefault();
-
-		if(!this.state.hamburgerOpen) {
-			this.setState({ hamburgerOpen: true });
-		}
 	}
 
 	handleScroll(e) {
@@ -46,11 +39,27 @@ class Main extends React.Component {
 		}
 	}
 
+	handleHamburgerClick(e) {
+		e.preventDefault();
+
+		if(!this.state.hamburgerOpen) {
+			this.setState({ hamburgerOpen: true });
+		}
+	}
+
+	handleMenuClose(e) {
+		e.preventDefault();
+
+		if(this.state.hamburgerOpen) {
+			this.setState({ hamburgerOpen: false });
+		}
+	}
+
 	render() {
 		return (
 			<div>
 				<Navbar isScrolling={this.state.scrolling} onHamburgerClick={this.handleHamburgerClick} />
-				<HamburgerMenu isOpened={this.state.hamburgerOpen} />
+				<HamburgerMenu isOpened={this.state.hamburgerOpen} onMenuClose={this.handleMenuClose} />
 				<PageLanding />
 				<div className="test">haha</div>
 			</div>

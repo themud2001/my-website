@@ -9,8 +9,8 @@ function NavbarCustom({ isScrolling, onHamburgerClick }) {
 		<Navbar fixed="top" className={"navbar-custom justify-content-between" + (isScrolling ? " scrolling" : "")} variant="dark">
 			<Navbar.Brand href="#">THEMUD</Navbar.Brand>
 			<Nav>
-				<Nav.Link>
-					<Hamburger onClick={onHamburgerClick} />
+				<Nav.Link onClick={onHamburgerClick}>
+					<Hamburger />
 				</Nav.Link>
 			</Nav>
 		</Navbar>

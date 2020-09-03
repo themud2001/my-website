@@ -54,8 +54,8 @@ html, body {
 	}
 }
 
-.navbar-custom .navbar-nav .menu-toggler:hover {
-	svg .menu-hamburger {
+.navbar-custom .navbar-nav .nav-link:hover {
+	.menu-toggler svg .menu-hamburger {
 		stroke: #FFF;
 	}
 }
@@ -69,13 +69,13 @@ html, body {
 	height: 100%;
 	width: 100%;
 	z-index: 10;
-	transition: opacity 0.25s ease;
+	transition: opacity 0.25s ease !important;
 }
 
 .menu-content.opened {
 	visibility: visible;
-	opacity: 100%;
-	transition: opacity 0.25s ease;
+	opacity: 1;
+	transition: all 0.25s ease !important;
 }
 
 .menu-content .container-fluid {
