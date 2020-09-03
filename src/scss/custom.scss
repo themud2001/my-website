@@ -61,13 +61,17 @@ html, body {
 }
 
 .menu-content {
-	//display: none;
+	display: none;
 	font-family: "Simplifica";
 	position: fixed;
 	background-color: $primary;
 	height: 100%;
 	width: 100%;
 	z-index: 10;
+}
+
+.menu-content.opened {
+	display: block;
 }
 
 .menu-content .container-fluid {

@@ -3,9 +3,9 @@ import * as React from "react";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 
-function HamburgerMenu() {
+function HamburgerMenu({ isOpened }) {
 	return (
-		<div className="menu-content">
+		<div className={"menu-content" + (isOpened ? " opened" : "")}>
 			<Container fluid>
 				<Nav className="flex-column text-center">
 					<svg width="56px" height="56px" viewBox="0 0 16 16" className="menu-close" fill="#000" xmlns="http://www.w3.org/2000/svg">

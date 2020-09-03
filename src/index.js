@@ -15,7 +15,9 @@ class Main extends React.Component {
 			scrolling: false,
 			hamburgerOpen: false
 		};
+
 		this.handleScroll = this.handleScroll.bind(this);
+		this.handleHamburgerClick = this.handleHamburgerClick.bind(this);
 	}
 
 	componentDidMount() {
@@ -28,7 +30,10 @@ class Main extends React.Component {
 
 	handleHamburgerClick(e) {
 		e.preventDefault();
-		this.setState({ hamburgerOpen: true });
+
+		if(!this.state.hamburgerOpen) {
+			this.setState({ hamburgerOpen: true });
+		}
 	}
 
 	handleScroll(e) {
@@ -44,8 +49,8 @@ class Main extends React.Component {
 	render() {
 		return (
 			<div>
-				<Navbar isScrolling={this.state.scrolling} />
-				<HamburgerMenu />
+				<Navbar isScrolling={this.state.scrolling} onHamburgerClick={this.handleHamburgerClick} />
+				<HamburgerMenu isOpened={this.state.hamburgerOpen} />
 				<PageLanding />
 				<div className="test">haha</div>
 			</div>

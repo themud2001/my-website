@@ -4,13 +4,13 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Hamburger from "./Hamburger";
 
-function NavbarCustom({ isScrolling }) {
+function NavbarCustom({ isScrolling, onHamburgerClick }) {
 	return (
 		<Navbar fixed="top" className={"navbar-custom justify-content-between" + (isScrolling ? " scrolling" : "")} variant="dark">
 			<Navbar.Brand href="#">THEMUD</Navbar.Brand>
 			<Nav>
 				<Nav.Link>
-					<Hamburger />
+					<Hamburger onClick={onHamburgerClick} />
 				</Nav.Link>
 			</Nav>
 		</Navbar>
