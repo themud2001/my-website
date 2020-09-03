@@ -2,6 +2,7 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 
 import Navbar from "./components/NavbarCustom";
+import HamburgerMenu from "./components/HamburgerMenu";
 import PageLanding from "./components/PageLanding";
 
 import './scss/custom.scss';
@@ -10,7 +11,10 @@ class Main extends React.Component {
 	constructor() {
 		super();
 
-		this.state = { scrolling: false };
+		this.state = {
+			scrolling: false,
+			hamburgerOpen: false
+		};
 		this.handleScroll = this.handleScroll.bind(this);
 	}
 
@@ -20,6 +24,11 @@ class Main extends React.Component {
 
 	componentWillUnmount() {
 		window.removeEventListener("scroll", this.handleScroll);
+	}
+
+	handleHamburgerClick(e) {
+		e.preventDefault();
+		this.setState({ hamburgerOpen: true });
 	}
 
 	handleScroll(e) {
@@ -36,6 +45,7 @@ class Main extends React.Component {
 		return (
 			<div>
 				<Navbar isScrolling={this.state.scrolling} />
+				<HamburgerMenu />
 				<PageLanding />
 				<div className="test">haha</div>
 			</div>
