@@ -16,7 +16,7 @@ function About() {
 
 			<Row className="justify-content-center">
 				<Col lg="6" sm="10" xs="10" md="8">
-					<p className="lead about-content">I'm a full-stack web developer and a computer enthusiast that loves working in complex, advanced systems with the latest, cutting-edge technologies. I have developed and deployed many websites with fancy user interfaces.</p>
+					<p className="lead about-content">I'm Moath Zayadneh, I go by the username <span>THEMUD</span> online. I'm a full-stack web developer and a computer enthusiast that loves working in complex, advanced systems with the latest, cutting-edge technologies. I have developed and deployed many websites with fancy user interfaces.</p>
 					<p className="lead about-content">I'm very ardent about topics like mobile development and especially artificial intelligence, which the future will rely on, and I'm really looking to dive into it.</p>
 					<p className="lead about-content">I believe I have the ability to explain codes to people because I'm also a <span>Udemy</span> instructor. I explained various topics on web development and wrapped my explanation with courses I uploaded on the platform.</p>
 					<p className="lead about-content">One of my best projects is that I have written an operating system (OS) and a boot loader from scratch using Assembly and C.</p>
