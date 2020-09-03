@@ -61,17 +61,21 @@ html, body {
 }
 
 .menu-content {
-	display: none;
+	visibility: hidden;
+	opacity: 0;
 	font-family: "Simplifica";
 	position: fixed;
 	background-color: $primary;
 	height: 100%;
 	width: 100%;
 	z-index: 10;
+	transition: opacity 0.25s ease;
 }
 
 .menu-content.opened {
-	display: block;
+	visibility: visible;
+	opacity: 100%;
+	transition: opacity 0.25s ease;
 }
 
 .menu-content .container-fluid {
