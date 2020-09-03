@@ -4,6 +4,7 @@ import * as ReactDOM from "react-dom";
 import Navbar from "./components/NavbarCustom";
 import HamburgerMenu from "./components/HamburgerMenu";
 import PageLanding from "./components/PageLanding";
+import About from "./components/About";
 
 import './scss/custom.scss';
 
@@ -30,7 +31,7 @@ class Main extends React.Component {
 	}
 
 	handleScroll(e) {
-		if(window.pageYOffset > 60) {
+		if(window.pageYOffset > 50) {
 			if(!this.state.scrolling) {
 				this.setState({ scrolling: true });
 			}
@@ -61,7 +62,7 @@ class Main extends React.Component {
 				<Navbar isScrolling={this.state.scrolling} onHamburgerClick={this.handleHamburgerClick} />
 				<HamburgerMenu isOpened={this.state.hamburgerOpen} onMenuClose={this.handleMenuClose} />
 				<PageLanding />
-				<div className="test">haha</div>
+				<About />
 			</div>
 		);
 	}

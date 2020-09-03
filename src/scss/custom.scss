@@ -110,6 +110,7 @@ html, body {
 	background-image: url("./images/roses_background.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 	background-size: cover;
 	border-top: 1px solid transparent;
 }
@@ -140,8 +141,18 @@ html, body {
 	background-color: $dark-primary;
 }
 
-.test {
-	height: 1500px;
+.about-container {
+	background-color: $black;
+	margin-top: 100px;
+}
+
+.about-container .row .about-label {
+	font-family: "Simplifica";
+	color: $dark-primary;
+}
+
+.about-container .row .about-content {
+	color: #DDD;
 }
 
 @import "~bootstrap/scss/bootstrap";
